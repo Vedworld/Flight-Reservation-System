@@ -115,8 +115,6 @@ The main entities in the system are:
    ```bash
    npm start
 
-# Flight Reservation System
-
 ## Usage
 1. Open the frontend in your browser at [http://localhost:3000](http://localhost:3000).
 2. Users can register, log in, search for flights, and manage their bookings.
