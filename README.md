@@ -1,4 +1,7 @@
 # Flight Reservation System
+## Entity-Relationship Diagram
+![ER Diagram for Flight Reservation System](https://www.bing.com/images/create/er-diagram-for-a-flight-reservation-system-with-en/1-66f44603790c4d65b60e23f877783a41?id=rJniJxuibQ8FAIAxFpQvhQ%3d%3d&view=detailv2&idpp=genimg&idpclose=1&thId=OIG2.tdiCvOr8lzTwzdY9pHxL&frame=sydedg&skey=LdTpctOV4n5ar_KtAoANegTmhcLR-dOu-vd1mmIiavA&FORM=SYDBIC)
+
 
 ## Table of Contents
 - [Project Overview](#project-overview)
@@ -11,7 +14,7 @@
 - [API Documentation](#api-documentation)
 - [Future Enhancements](#future-enhancements)
 - [Contributing](#contributing)
-- [License](#license)
+
 
 ## Project Overview
 The Flight Reservation System is a web-based application developed to facilitate flight booking, management, and payment functionalities for users, while providing administrators the ability to manage flights, airports, and schedules. The project is built using modern technologies, with separate services for users and admins.
@@ -121,10 +124,6 @@ The main entities in the system are:
 4. Payment confirmations and PDF tickets will be sent to users via email.
 
 ## API Documentation
-The APIs are documented using OpenAPI (Swagger) and can be accessed via the following links:
-- User Service: [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html)
-- Admin Service: [http://localhost:5000/swagger-ui.html](http://localhost:5000/swagger-ui.html)
-
 ### Sample API Endpoints:
 - Get all flights (GET): `/flight/allFlights`
 - Book a flight (POST): `/booking/bookFlight`
@@ -144,6 +143,5 @@ We welcome contributions! Follow these steps to contribute:
 3. Make changes and commit your code.
 4. Create a pull request explaining your changes.
 
-## License
-This project is licensed under the MIT License. See the LICENSE file for more details.
+
 
