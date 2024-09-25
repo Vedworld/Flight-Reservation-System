@@ -1,5 +1,5 @@
 # Flight Reservation System
-## Entity-Relationship Diagram
+## Diagram
 [View the ER Diagram on Pinterest](https://i.pinimg.com/736x/ac/99/e2/ac99e2271ba26d0f0500803116942f85.jpg)
 
 
