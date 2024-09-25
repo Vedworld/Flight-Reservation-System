@@ -89,13 +89,13 @@ The main entities in the system are:
 1. Clone the repository:
    ```bash
    git clone https://github.com/your-username/flight-reservation-system.git
-   Navigate to the user-service directory.
-Configure the MySQL database in the application.properties file.
-Run the Spring Boot application:
-
+2. Navigate to the user-service directory.
+3. Configure the MySQL database in the application.properties file.
+4. Run the Spring Boot application:
+ ```bash
 mvn spring-boot:run
 
-Backend (Admin Service):
+### Backend (Admin Service):
 Navigate to the admin-service directory.
 Ensure that ASP.NET Core is installed.
 Run the admin service:
