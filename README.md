@@ -1,74 +1,91 @@
-Flight Reservation System
-Table of Contents
-Project Overview
-Technologies Used
-Features
-System Architecture
-Database Schema
-Installation
-Usage
-API Documentation
-Future Enhancements
-Contributing
-License
-Project Overview
-The Flight Reservation System is a full-stack web application that allows users to search, book, and manage flight reservations. It provides separate functionalities for users and administrators. Users can book flights, manage their reservations, and make secure payments. Administrators can manage flights, airports, and scheduled flights.
+# Flight Reservation System
 
-The project follows a microservices architecture, where the user-side backend is powered by Java with Spring Boot and the admin-side backend by ASP.NET Core. The frontend is developed using React.js, with MySQL serving as the database. Additional features like PDF ticket generation and real-time email and SMS notifications are integrated into the system.
+## Table of Contents
+- [Project Overview](#project-overview)
+- [Technologies Used](#technologies-used)
+- [Features](#features)
+- [System Architecture](#system-architecture)
+- [Database Schema](#database-schema)
+- [Installation](#installation)
+- [Usage](#usage)
+- [API Documentation](#api-documentation)
+- [Future Enhancements](#future-enhancements)
+- [Contributing](#contributing)
+- [License](#license)
 
+## Project Overview
+The Flight Reservation System is a web-based application developed to facilitate flight booking, management, and payment functionalities for users, while providing administrators the ability to manage flights, airports, and schedules. The project is built using modern technologies, with separate services for users and admins.
 
-Technologies Used
-Frontend:
-React.js
-HTML, CSS, Bootstrap
-Backend:
-Java with Spring Boot (User functionality)
-ASP.NET Core (Admin functionality)
-Hibernate (ORM for Java)
-Database:
-MySQL
-Other Technologies:
-RESTful APIs
-JWT (JSON Web Tokens) for authentication
-PDF generation for tickets
-Email and SMS notifications (e.g., via Twilio or SMTP)
-GitHub for version control
-Docker for containerization
-Features
-User Features:
+Users can search for available flights, book tickets, and make secure payments. Administrators can manage flight details, monitor bookings, and perform CRUD operations on airports and flights. The system includes features like PDF ticket generation, real-time email/SMS notifications, and API documentation using OpenAPI.
 
-Flight search and booking
-User registration and login
-View and manage bookings
-Receive notifications for booking status via email/SMS
-Secure payments with confirmation
-Admin Features:
+## Technologies Used
+### Frontend:
+- React.js
+- HTML, CSS, Bootstrap
 
-Add, update, or delete flights and schedules
-Manage airports and flight data
-View all users and bookings
-Generate reports
-Additional Features:
+### Backend:
+- Java with Spring Boot (User service)
+- ASP.NET Core (Admin service)
+- Hibernate (Java ORM)
 
-PDF ticket generation post-booking
-Real-time notifications for booking confirmations or cancellations
-Role-based access control (Users vs Admins)
-API documentation using OpenAPI for easy integration
-System Architecture
-The system is divided into two main backend components:
+### Database:
+- MySQL
 
-User Service (Java, Spring Boot): Responsible for flight bookings, user management, and payments.
-Admin Service (ASP.NET Core): Admins manage flight schedules, user accounts, and bookings.
-Key Components:
-React Frontend communicates with both backend services via REST APIs.
-MySQL Database stores user data, booking information, flight schedules, and payment details.
-Spring Boot & ASP.NET Core handle business logic and expose RESTful APIs for communication with the frontend.
-Database Schema
-The database includes the following main entities:
+### Additional Tools:
+- JWT for secure user authentication
+- GitHub for version control
+- Docker for containerization
+- OpenAPI (Swagger) for API documentation
 
-User: Stores user details such as user_id, name, email, and role (User/Admin).
-Flight: Stores flight details such as flight_id, departure_time, arrival_time, and airline_name.
-Airport: Stores airport information such as airport_code, city, and country.
-Booking: Stores booking details for users such as booking_id, flight_id, user_id, status, and payment_status.
-Scheduled Flight: Tracks scheduled flights for specific dates.
-Payment: Stores transaction details for each booking.
+## Features
+### User Features:
+- User registration, login, and authentication
+- Flight search and booking
+- View, update, and cancel bookings
+- Receive PDF tickets via email after successful booking
+- Real-time email and SMS notifications for booking updates
+- Secure payments with transaction confirmation
+
+### Admin Features:
+- Admin login for role-based access
+- Manage flights: add, update, delete, and view flight details
+- Manage airports: add, update, delete, and view airport information
+- Monitor and manage user bookings
+- Generate reports and view analytics
+
+### Additional Features:
+- PDF ticket generation
+- Real-time notifications via email/SMS
+- Role-based access control (Users vs Admins)
+- API documentation using OpenAPI (Swagger)
+
+## System Architecture
+The Flight Reservation System is divided into two main backend services:
+
+### User Service:
+- Developed using Java (Spring Boot) and responsible for user functionalities like flight booking, user management, and payments.
+
+### Admin Service:
+- Developed using ASP.NET Core to manage admin-related functionalities like flight management, airport operations, and user data handling.
+
+**High-level System Design:**
+- **Frontend (React.js):** Provides an interactive and responsive user interface.
+- **Backend (Java, ASP.NET):** Handles business logic, REST APIs, and database interactions.
+- **Database (MySQL):** Stores user, flight, booking, and airport data.
+- **REST APIs:** Used for communication between the frontend and backend services.
+
+## Database Schema
+The main entities in the system are:
+- **User:** Stores user information like user_id, name, email, password, role (User/Admin).
+- **Flight:** Contains flight details like flight_id, departure_time, arrival_time, and airline_name.
+- **Airport:** Contains information about airports, such as airport_code, city, country.
+- **Booking:** Tracks bookings made by users, including booking_id, flight_id, user_id, and status.
+- **Scheduled Flight:** Tracks the availability and scheduling of specific flights.
+- **Payment:** Manages payment details such as payment_id, amount, payment_status.
+- **Ticket:** Contains ticket information post-booking, including ticket_number, seat_number, and class.
+
+## Installation
+### Backend (User Service):
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/flight-reservation-system.git
