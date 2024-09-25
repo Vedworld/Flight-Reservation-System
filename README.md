@@ -1,6 +1,6 @@
 # Flight Reservation System
 ## Entity-Relationship Diagram
-![ER Diagram for Flight Reservation System](https://drive.google.com/file/d/14cDGE94w0jqB9zM-xyvv0nY4SzjSaXLS/view?usp=drive_link)]
+![ER Diagram for Flight Reservation System](https://ca.pinterest.com/pin/788833691014494315/)]
 
 
 ## Table of Contents
