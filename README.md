@@ -89,3 +89,62 @@ The main entities in the system are:
 1. Clone the repository:
    ```bash
    git clone https://github.com/your-username/flight-reservation-system.git
+   Navigate to the user-service directory.
+Configure the MySQL database in the application.properties file.
+Run the Spring Boot application:
+
+mvn spring-boot:run
+
+Backend (Admin Service):
+Navigate to the admin-service directory.
+Ensure that ASP.NET Core is installed.
+Run the admin service:
+
+dotnet run
+
+Frontend:
+Navigate to the react-frontend directory.
+Install the required dependencies:
+
+npm install
+
+Start the React development server:
+
+npm start
+
+
+# Flight Reservation System
+
+## Usage
+1. Open the frontend in your browser at [http://localhost:3000](http://localhost:3000).
+2. Users can register, log in, search for flights, and manage their bookings.
+3. Admins can log in and manage flights, airports, and view user bookings.
+4. Payment confirmations and PDF tickets will be sent to users via email.
+
+## API Documentation
+The APIs are documented using OpenAPI (Swagger) and can be accessed via the following links:
+- User Service: [http://localhost:8080/swagger-ui.html](http://localhost:8080/swagger-ui.html)
+- Admin Service: [http://localhost:5000/swagger-ui.html](http://localhost:5000/swagger-ui.html)
+
+### Sample API Endpoints:
+- Get all flights (GET): `/flight/allFlights`
+- Book a flight (POST): `/booking/bookFlight`
+- Admin add airport (POST): `/admin/addAirport`
+
+## Future Enhancements
+- Implement seat selection during the booking process.
+- Integration with third-party payment gateways.
+- Add support for multiple languages.
+- Introduce loyalty reward programs for frequent flyers.
+- Implement real-time flight tracking.
+
+## Contributing
+We welcome contributions! Follow these steps to contribute:
+1. Fork the repository.
+2. Create a new branch for your feature.
+3. Make changes and commit your code.
+4. Create a pull request explaining your changes.
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for more details.
+
