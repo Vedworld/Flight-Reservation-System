@@ -109,9 +109,8 @@ The main entities in the system are:
    npm install
 
 3. Start the React development server:
-  ```bash
+   ```bash
    npm start
-
 
 # Flight Reservation System
 
