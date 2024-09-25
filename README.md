@@ -92,25 +92,25 @@ The main entities in the system are:
 2. Navigate to the user-service directory.
 3. Configure the MySQL database in the application.properties file.
 4. Run the Spring Boot application:
- ```bash
-mvn spring-boot:run
+   ```bash
+  mvn spring-boot:run
 
 ### Backend (Admin Service):
-Navigate to the admin-service directory.
-Ensure that ASP.NET Core is installed.
-Run the admin service:
+1. Navigate to the admin-service directory.
+2. Ensure that ASP.NET Core is installed.
+3. Run the admin service:
+   ```bash
+   dotnet run
 
-dotnet run
+### Frontend:
+1. Navigate to the react-frontend directory.
+2. Install the required dependencies:
+   ```bash
+   npm install
 
-Frontend:
-Navigate to the react-frontend directory.
-Install the required dependencies:
-
-npm install
-
-Start the React development server:
-
-npm start
+3. Start the React development server:
+  ```bash
+  npm start
 
 
 # Flight Reservation System
