@@ -1,6 +1,6 @@
 # Flight Reservation System
 ## Diagram
-[View the ER Diagram on Pinterest](https://i.pinimg.com/736x/ac/99/e2/ac99e2271ba26d0f0500803116942f85.jpg)
+[View the project example diagram on Pinterest](https://i.pinimg.com/736x/ac/99/e2/ac99e2271ba26d0f0500803116942f85.jpg)
 
 
 
